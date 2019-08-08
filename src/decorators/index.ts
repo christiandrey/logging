@@ -1,4 +1,4 @@
-import { HttpResponse, ApiResponse, ApiResponseError, HttpStatusCodes } from "@elf/utils";
+import { HttpResponse, ApiResponse, ApiResponseError, HttpStatusCodes } from "elf-utils";
 export const Logger = (): MethodDecorator => {
 	return (target: Object, propertyName: string, propertyDescriptor: PropertyDescriptor) => {
 		const original = propertyDescriptor.value;

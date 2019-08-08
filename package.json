@@ -1,15 +1,18 @@
 {
-	"name": "@elf/logging",
-	"version": "1.0.0-alpha",
-	"main": "index.ts",
+	"name": "elf-logging",
+	"version": "1.0.2-alpha",
+	"main": "index.js",
 	"repository": "https://github.com/christiandrey/logging.git",
 	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
 	"license": "MIT",
+	"scripts": {
+		"build": "yarn tsc --target es5 --declaration index.ts"
+	},
 	"devDependencies": {
 		"@types/node": "^12.7.1",
 		"typescript": "^3.5.3"
 	},
 	"dependencies": {
-		"@elf/utils": "christiandrey/utils"
+		"elf-utils": "^1.0.6-alpha"
 	}
 }
