@@ -39,7 +39,7 @@ export const FileLogger = (): MethodDecorator => {
 				const base = await original.apply(this, args);
 				return base;
 			} catch (error) {
-				const filePath = path.resolve(__dirname, "/../../elf.log");
+				const filePath = path.resolve(process.cwd(), "./elf.log");
 				const content = `\nFATAL: ${new Date().toISOString()}: ${error}\n`;
 				fs.appendFile(filePath, content, () => {});
 
