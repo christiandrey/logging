@@ -1,6 +1,6 @@
 {
 	"name": "elf-logging",
-	"version": "1.0.6-alpha",
+	"version": "1.0.7-alpha",
 	"main": "index.js",
 	"repository": "https://github.com/christiandrey/logging.git",
 	"author": "Christian Dréy <oluwaseun.adedire@gmail.com>",
@@ -13,6 +13,6 @@
 		"typescript": "^3.5.3"
 	},
 	"dependencies": {
-		"elf-utils": "^1.0.6-alpha"
+		"elf-utils": "^1.0.8-alpha"
 	}
 }
