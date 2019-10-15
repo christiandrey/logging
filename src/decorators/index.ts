@@ -11,6 +11,18 @@ export const Logger = (): MethodDecorator => {
 				const base = await original.apply(this, args);
 				return base;
 			} catch (error) {
+				const elfLogMode = process.env.ELF_LOG_MODE;
+
+				if (elfLogMode === "file") {
+					const filePath = path.resolve(process.cwd(), "./elf.log");
+					const content = `\nFATAL: ${new Date().toISOString()}: ${error}\n`;
+					fs.appendFile(filePath, content, () => {});
+				}
+
+				if (elfLogMode === "console") {
+					console.log("FATAL: ", new Date().toISOString(), ": ", error);
+				}
+
 				return new HttpResponse(
 					new ApiResponse({
 						errors: [
