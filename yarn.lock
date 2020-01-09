@@ -25,13 +25,12 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-elf-utils@^1.0.9-alpha:
-  version "1.0.9-alpha"
-  resolved "https://registry.yarnpkg.com/elf-utils/-/elf-utils-1.0.9-alpha.tgz#66a8e28bf3f1d507f09af55033a8256a57dd7ec7"
-  integrity sha512-z8AkXCoYOXH9rspeZg0b8tQxq4Jwoo+AygLSDOz34kEaij35cbHcaPO2/cXux6nzyMe0dizuB1D4kGftLKsrPg==
+elf-utils@1.1.x:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/elf-utils/-/elf-utils-1.1.0.tgz#d365c113e683ffa7fb85871845ef9436f0f11684"
+  integrity sha512-7ez439HSCsJ2BunQLRe7q9SGy0In4KD0gy6iEaPXbTqTLrFYHjSXshQkfeABOXa6dB7k+HRix4/0GNl0JAvTew==
   dependencies:
     glob "^7.1.4"
-    reflect-metadata "^0.1.13"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -81,11 +80,6 @@ path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
-
-reflect-metadata@^0.1.13:
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
-  integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
 
 typescript@^3.5.3:
   version "3.5.3"
